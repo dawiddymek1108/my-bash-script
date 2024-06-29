@@ -14,3 +14,9 @@ if [ "$1" == "--logs" ]; then
         echo "Date: $(date)" >> $filename
     done
 fi
+if [ "$1" == "--help" ]; then
+    echo "Available options:"
+    echo "--date      Display current date"
+    echo "--logs [n]  Create n log files (default 100)"
+    echo "--help      Display this help message"
+fi
